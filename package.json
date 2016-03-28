@@ -1,0 +1,45 @@
+{
+  "name": "idn-allowed-code-points",
+  "version": "0.0.0",
+  "description": "Verisign’s list of allowed-by-default IDN code points.",
+  "homepage": "https://github.com/mathiasbynens/idn-allowed-code-points",
+  "main": "symbols.js",
+  "keywords": [
+    "idn",
+    "idna",
+    "punycode",
+    "verisign",
+    "unicode",
+    "unicode-data",
+    "code points",
+    "symbols",
+    "characters",
+    "data"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Mathias Bynens",
+    "url": "https://mathiasbynens.be/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathiasbynens/idn-allowed-code-points.git"
+  },
+  "bugs": "https://github.com/mathiasbynens/idn-allowed-code-points/issues",
+  "files": [
+    "LICENSE-MIT.txt",
+    "code-points.json",
+    "symbols.json"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "phantomjs --load-images=no scripts/scrape.js",
+    "test": "mocha tests"
+  },
+  "devDependencies": {
+    "jsesc": "^0.5.0",
+    "mocha": "^2.2.5"
+  }
+}
